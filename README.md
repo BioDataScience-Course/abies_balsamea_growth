@@ -1,33 +1,30 @@
-Croissance de **Abies balsamea** (L.) Mill., 1768 au mont Moosilauke
+Croissance du sapin *Abies balsamea* (L.) Mill., 1768 au mont Moosilauke
 ================
 
 <!--- DO NOT EDIT README.MD. EDIT ONLY README.RMD ----->
 
 ## Contexte
 
-Wood et son équipe (2015) ont étudié la croissance de **A. balsamea**.
+Wood et son équipe (2015) ont étudié la croissance de *Abies balsamea*.
 
 **Pour en apprendre d’avantages, utilisez la référence présente dans la
 bibliographie.**
 
-Ces chercheurs ont décidé de mettre à dispositon les données relatives à
-cette recherche. Ils ont utilisé la plateforme
-[DRYAD](https://datadryad.org). Les données ont un D.O.I. et sont
-disponible via l’URL suivant <https://doi.org/10.5061/dryad.r3645>.
+Ces chercheurs ont décidé de mettre à disposition les données relatives
+à cette recherche. Ils ont utilisé la plateforme
+[DRYAD](https://datadryad.org). Les données ont un DOI et sont
+disponibles via l’URL suivante <https://doi.org/10.5061/dryad.r3645>.
 
-Les données brutes se trouve `data/raw`. Ces données sont les données
-brutes proposées par DRYAD. Les données de travail conseillés se nomme
+Les données brutes teklles que disponible à partir de DRYAD se trouvent
+dans `data/raw`. Les données de travail remaniées sont dans le fichier
 `data/growth.rds`. Ce jeu de données est obtenu avec le script R
 `dataset.R`
 
 ## Objectifs
 
-Utilisez les outils de modélisation afin de modéliser la croissance de
-**A. balsamea**. Intéressez à la taille de l’arbre en fonction de son
-diamètre.
-
-La figure ci-dessus présente la hauteur des arbres en fonction du
-diamètre.
+effectuez une modélisation de la croissance de *A. balsamea*.
+Intéressez-vous à la taille de l’arbre en fonction de son diamètre
+(voir figure ci-dessous).
 
 ``` r
 read("data/growth.rds") %>.%
@@ -36,31 +33,30 @@ read("data/growth.rds") %>.%
   labs(x = "Diamètre [cm]", y = "Hauteur [m]")
 ```
 
-![Variation de la hauteur en fonction du dimètre de A. balsemea
-(n=1958).](README_files/figure-gfm/unnamed-chunk-1-1.png)
+![Variation de la hauteur en fonction du diamètre de A. balsemea (n =
+1958).](README_files/figure-gfm/unnamed-chunk-1-1.png)
 
 Utilisez les outils du module 1 à 4 du cours en ligne
 <http://biodatascience-course.sciviews.org/sdd-umons2/>
 
 ## Consignes
 
-Proposez un projet portable dont l’ensemble des fichiers sont
+Proposez un projet portable avec tous ses fichiers qui doivent être
 exécutables. L’ensemble de ces fichiers doit être organisé. Soyez
 attentif à donner des noms corrects à vos fichiers.
 
-Ce projet doit contenir au minimum 2 fichiers dont un carnet de notes
+Ce projet doit contenir au minimum deux fichiers dont un carnet de notes
 (**growth\_notes.Rmd**) et un rapport scientifique
 (**growth\_reports.Rmd**).
 
 ### Carnet de notes
 
-Le carnet de notes doit débuter par une mise en contexte du carnet de
-notes. Chaque carnet de notes doit débuter par une mise en contexte qui
-explique l’objectif de ce dernier. Le carnet de notes contient
-l’ensemble des réflexions sur une thématique précise.
+Le carnet de notes doit débuter par une mise en contexte qui explique
+l’objectif de ce dernier. Le carnet de notes contient l’ensemble des
+réflexions sur une thématique précise.
 
 Ce carnet de notes doit comprendre une section pour chaque module
-utilisées du cours.
+utilisé du cours.
 
 ### Rapport scientifique
 
@@ -77,19 +73,20 @@ d’intérêt et le contexte de l’expérience.
 Le rapport doit comprendre un but court qui résume la question de
 recherche de ce rapport scientifique.
 
-Le rapport doit comprendre un matériel et méthode complet. Un M\&M
-complet comprend une explication sur les données. Il doit également
-comprendre une description des techniques statistiques employées dans ce
-rapport. Enfin, il doit comprendre une description des outils et des
-versions de ces derniers.
+Le rapport doit comprendre un matériel et méthode complet y compris une
+explication sur les données. Il doit également comprendre une
+description des techniques statistiques employées dans ce rapport.
+Enfin, il doit comprendre une description des outils et des versions de
+ces derniers.
 
 La section résultat de votre rapport scientifique doit comprendre des
 graphiques, des tableaux et un/des modèle(s) sélectionné(s)
 judicieusement. Ils doivent être décrits dans la section résultat. Les
 résultats doivent être uniquement décrits.
 
-La section discussion doit comprendre une discussion de vos résultats.
-Ne confondez pas la description et la discussion de vos analyses.
+La section discussion doit élaborer des explications sur base de vos
+résultats. Ne confondez pas la description et la discussion de vos
+analyses.
 
 Utilisez la grille d’évaluation pour vous assurer que votre projet est
 complet.
